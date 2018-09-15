@@ -1,5 +1,4 @@
 /* HTML Page */
-
 body {
   background-image: url("https://thumbs.dreamstime.com/b/texture-en-m%C3%A9tal-7961956.jpg");
   opacity: 0.7;
@@ -47,6 +46,7 @@ nav ul {
   bottom: 0;
   width: 100%;
   max-width: 100%;
+  z-index: 1;
 }
 
 nav li {
@@ -68,10 +68,29 @@ nav li a {
   transition: 2s;
 }
 
-nav li a:hover {
-  background-color: #111;
+.hoverhtml :hover {
+  background-color: orangered;
   height: auto;
   width: 300px;
+}
+.hovercss :hover {
+  background-color: blue;
+  height: auto;
+  width: 300px;
+}
+.hoverjava :hover {
+  background-color: goldenrod;
+  height: auto;
+  width: 300px;
+}
+.hovercontact :hover {
+  height: auto;
+  width: 300px;
+  background-color: #111;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
 }
 
 /* CSS Page */
@@ -90,9 +109,9 @@ nav li a:hover {
   background-position: center;
   background-size: 12%;
   background-position: top;
-
 }
-.cssmain , .cssmain li{
+.cssmain,
+.cssmain li {
   text-align: center;
   font-size: 20px;
   font-weight: bolder;
@@ -150,7 +169,6 @@ nav li a:hover {
   width: 300px;
 }
 
-
 /* Javascript Page */
 
 .javapage {
@@ -167,9 +185,9 @@ nav li a:hover {
   background-position: center;
   background-size: 10%;
   background-position: top;
-
 }
-.javamain , .javamain li{
+.javamain,
+.javamain li {
   text-align: center;
   font-size: 20px;
   font-weight: bolder;
@@ -188,7 +206,6 @@ img {
   padding-bottom: 50px;
   opacity: 0.9;
 }
-
 
 /* Javascript Navbar */
 nav ul {
@@ -210,7 +227,7 @@ nav li {
 
 .navbaryellow li a {
   display: block;
-  color:whitesmoke;
+  color: whitesmoke;
   font-size: 15px;
   text-shadow: 2px 2px goldenrod;
   text-align: center;
@@ -243,24 +260,58 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
-
 }
 
-.lg-heading{
+.lg-heading {
   font-size: 40px;
-  color:whitesmoke;
+  color: whitesmoke;
   text-align: center;
 }
-.boxes{
-  text-align: center;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+
+/*Contact Form Input*/
+
+label[for="fname"],
+label {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
   color: whitesmoke;
-  list-style-type: none;
+}
+
+input[type="text"],
+select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
+input[type="submit"] {
+  width: 40%;
+  background-color: orangered;
+  color: white;
+  display: block;
+  padding: 14px 20px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+div table {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 /* Color changing Contact Navbar */
 nav ul {
@@ -283,7 +334,7 @@ nav li {
 .navbarcontact li a {
   display: block;
   color: white;
-  text-shadow:2px 2px black;
+  text-shadow: 2px 2px black;
   font-size: 15px;
   text-align: center;
   padding: 18px;
@@ -299,25 +350,52 @@ nav li {
   width: 300px;
   background-color: #111;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 2s;
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
 }
-    /* Safari 4.0 - 8.0 */
+
+/* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-  0%   {background-color: black;}
-  25%  {background-color: whitesmoke;}
-  50%  {background-color: orangered;}
-  75%   {background-color: blue}
-  100% {background-color: goldenrod;}
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: orangered;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: goldenrod;
+  }
 }
 
 /* Standard syntax */
 @keyframes example {
-  0%   {background-color: black;}
-  25%  {background-color: whitesmoke;}
-  50%  {background-color: orangered;}
-  75%   {background-color: blue}
-  100% {background-color: goldenrod;}
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: orangered;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: goldenrod;
+  }
 }
+
+footer {
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0px 8px 0px;
 }

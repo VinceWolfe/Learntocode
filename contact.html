@@ -15,7 +15,7 @@
     <header>
         <nav class=navbarcontact>
             <ul>
-                <li><a href="contact.html current"> Contact</a></li>
+                <li><a href="contact.html"> Contact</a></li>
                 <li><a href="indexjava.html"> Javascript</a></li>
                 <li><a href="indexcss.html"> CSS </a></li>
                 <li><a href="index.html"> HTML</a></li>
@@ -28,20 +28,26 @@
     <h2 class="lg-heading">
         Contact Us:
     </h2>
-    <div class="boxes">
-        <div>
-            <span class="text-secondary">First Name:</span>
-        </div>
-        <div>
-            <span class="text-secondary">Last Name:</span>
-        </div>
-        <div>
-            <span class="text-secondary">E-mail address:</span>
-        </div>
+    <div class="table">
+        <form action="/action_page.php">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your full name..">
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your E-mail..">
+            </select>
+
+            <label for="lname">Breif explanation:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter a brief explanation..">
+
+
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
 
-    <footer id=main-footer>
+    <footer>
         Copyright &copy; 2018
     </footer>
 
