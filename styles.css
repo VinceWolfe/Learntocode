@@ -399,3 +399,51 @@ footer {
   text-align: center;
   padding: 8px 0px 8px 0px;
 }
+
+/* Small Screens */
+
+@media (max-width: 580px) {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  nav li {
+    float: right;
+    border-left: 1.2px solid #bbb;
+  }
+
+  nav li a,
+  .navbarblue li a,
+  .navbaryellow li a,
+  .navbarcontact li a {
+    display: block;
+    color: whitesmoke;
+    font-size: 10px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    width: 34px;
+    height: 11px;
+    background: dimgrey;
+    transition: 2s;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+    opacity: 0.8;
+  }
+}
